@@ -1,109 +1,200 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/index.css" />
+    <link rel="icon" href="./assets/img/logo1.png" >
     <link rel="stylesheet" href="assets/css/nav.css" />
+    <link rel="stylesheet" href="assets/css/index.css" />
     <style>
-        .outer-card {
-            width: 90%;
-            margin: auto;
-            padding: 20px;
-            box-sizing: border-box;
-            border: 1px solid #a09c9c;
-            background-color: rgb(194, 192, 189);
-            border-radius: 3px;
-        }
-        .text-center {
-            text-align: center;
-            justify-content: flex-start;
-        }
-        .inner-card-container {
+        /* body {
+            font-family: 'Arial', sans-serif;
+            background: rgba(212, 212, 212, 0.932);
+            display:flex;
+            flex-direction: column;
+            overflow: visible;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        } */
+        body {
+    /* font-family: 'Arial', sans-serif; */
+    background: rgb(181, 231, 208);
+    /* margin: 0;
+    border: 1px solid #000; */
+    padding: 0;
+}
+        /* .navbar {
+            background-color: #f4f3f3;
+            padding: 10px;
+            display: block;
+            /* width: auto; */
+            /* margin-right: 50px; }*/
+        
+
+        /* .navbar-ul {
             display: flex;
+            list-style: none;
             justify-content: space-between;
-            margin-top: 20px;
-            background-color: rgb(213, 218, 216);
+            align-items: center;
+            
+            
         }
-        .inner-card {
+
+        .navbar-left {
             display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .navbar-link {
+            text-decoration: none;
+            color: black
+        }
+        .active {
+    color: rgb(255, 77, 7);
+}
+
+.navbar-logo {
+    width: 50px;
+
+}
+
+        .navbar-contact-btn {
+            padding: 10px;
+            background-color: rgb(243, 74, 13);
+            color: rgb(70, 37, 37);
+            font-weight: bold;
+            font-size: 20px;
+            width: 100px;
+            border-radius: 10px;
+            /* margin-right: 20px; */
+            /* margin-top: 50px; */
+            /* text-decoration: none;
+             align-items: center; 
+        }  */
+        .content {
+            display: flex;
+            flex-direction: column;
+            overflow: visible;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+}
+        .container {
+            width: 80% ;
+            height: 90% auto ;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            /* overflow: auto; */
+            display: inline-flexbox;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            width: 45%;
-            padding: 20px;
-            box-sizing: border-box;
-            border: 1px solid #ccc;
-            background-color: rgb(240, 240, 240);
-            border-radius: 10px;
+            /* padding: 2px; */
         }
-        .inner-card .left{
-            flex: 1;
-            padding: 10px;
-            display: flex;
-            flex-direction: column;
+
+        .card {
+            width: 100% auto;
+            background-color: #fff;
+            /* border-radius: 8px; */
+            /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+            overflow: hidden;
+            background-color: #ffffff;
             align-items: center;
-            justify-content: flex-start;
-        } 
-        .inner-card .right {
-            flex: 1;
-            padding: 10px;
-        }
-        .inner-card img {
-            width: 300px;
-            height: 300px;
-            object-fit: cover;
-            /* background-color: rgb(250, 250, 247); */
-            
-        }
-        .inner-card p {
-            margin-top: 10px;
-        }
-        .h1{
+            justify-content: center;
+            display: block;
             text-align: center;
-            align-items: center;
-            
-            color: white;
-            background-color: rgb(236, 167, 17);
-            border-radius: 10px;
-            padding: 5px;
-            display: inline-block;
+
         }
+        .card-2{
+            background-image: url('path/to/your/image.jpg');  
+            background-size: cover;
+            background-position: center;
+             width: 400px  ;
+            height: auto ;
+            
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgb(154, 148, 230);
+            border-color: #000;
+            /* overflow: hidden;            */
+            align-items: center;
+            justify-content: center;
+            display: inline-block;
+            text-align: center;
+            margin-top: 10px; 
+        }
+
+        .card img {
+            width: auto;
+            height: auto;
+
+            object-fit: auto;
+            margin-top:1em;
+        }
+
+        .card-content {
+            padding: 20px;
+            margin:auto;
+            
+            
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            width: fit-content;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* .button:hover {
+            background-color: #2980b9;
+        } */
+
         .social-icons {
             display: flex;
+            margin-top: 10px;
             justify-content: center;
-            align-items: center;
-            height: 10px;
-            text-decoration: none;
         }
 
         .social-icons a {
-            margin: 0 10px;
+            margin-right: 10px;
             text-decoration: none;
-            color: #d41010; 
-            font-size: 24px; 
+            color: #333;
+            font-size: 30px;
         }
-        .button {
-            background-color: #4CAF50; 
-            border: none;
-            color: white;
-            padding: 15px 32px;
-            text-align: left;
-            border-radius: 10px;
-            display: inline-block;
-            font-size: 10px;
-            margin: 4px 2px;
-            cursor: pointer;
-            text-decoration: none ;
+        .long-text{
+            margin-top: 10px;
+            text-align: center;
+            justify-content: center;
+            margin-bottom: 1px;
             display: flex;
         }
-        .logo {
-            /* width: 20px; */
-            height: 1em;
-            vertical-align: middle;
+        .text-2{
+            max-width: 800px; 
+            text-align: left; 
+            margin: 5px auto; 
+             /* text-align:center ; 
+             align-items: auto;
+            justify-items: auto; */
+            
         }
+        
+
     </style>
+    <title>My Portfolio Web</title>
 </head>
 <body>
     <nav class="navbar">
@@ -113,88 +204,89 @@
                     <img src="assets/img/logo1.png" class="navbar-logo" />
                 </li>
                 <li>
-                    <a href="index.html" class="navbar-link active"> Home </a>
-                </li>
-                
-                <li>
-                    <a href="example.html" class="navbar-link"> My Project </a>
+                    <a href="index.html" class="navbar-link active">Home</a>
                 </li>
                 <li>
-                    <a href="card.html" class="navbar-link"> Card </a>
+                    <a href="example.html" class="navbar-link">My Project</a>
+                </li>
+                <li>
+                    <a href="simple.html" class="navbar-link"> Card </a>
                 </li>
             </div>
             <div class="navbar-right">
                 <li>
-                    <a href="contact.html" class="navbar-contact-btn"> Contact </a>
+                    <a href="contact.html" class="navbar-contact-btn">Contact</a>
                 </li>
             </div>
         </ul>
     </nav>
+<div class="content">
+    <!-- Card Body -->
+    <div class="container">
+        <!-- Card Pertama (Background) -->
+        <div class="card" ></div>
 
-    <div class="outer-card">
-        <div class="text-center">
-            <h1 class="h1">Welcome To My Portfolio</h1>
-        </div>
-        <div class="inner-card-container">
-            <div class="inner-card">
-                    <div class="left">
-                        <div style="margin-bottom: 3%;">
-                        <p> Selamat datang di portofolio saya! Saya adalah seorang Full Stack Developer dengan pengalaman dalam mengembangkan solusi perangkat lunak end-to-end. Dengan latar belakang dalam pengembangan web dan aplikasi, saya memiliki keahlian dalam mengintegrasikan teknologi dan membuat pengalaman pengguna yang responsif dan efisien.
-                        </p>
-                        </div>
-                        <div style="display: flex;">
-                            <div style="margin-bottom: 10px;">
-                            <a href="" style="text-decoration: none;" class= "button" alt="My CV">Contact Me </a>           
-                        </div>
-                        </div>
-                        <div>
-                            <p class="social"> 
-                                Download My CV 
-                                <a href="/contact.html" target="_blank">
-                                    <i class="fas fa-download"></i>
-                                </a>
-                                <!-- <img src="/assets/img/download.png" alt="Dumbways" class="logo"> -->
-                                
-                                
-                               
-                            
-                                
-                            </p>
-                        </div>
-                        <div style="margin-bottom: 30px;">
-                            <b>
-                                Follow My Social Media 
-                            </b>
-                        </div>
-                        <div>
-                            <div class="social-icons">
-                                <a href="https://www.facebook.com" target="_blank">
-                                    <i class="fab fa-google"></i>
-                                </a>
-                                <a href="https://www.twitter.com" target="_blank">
-                                    <i class="fab fa-twitter"></i>
-                                </a>
-                                <a href="https://www.instagram.com" target="_blank">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
-                                <a href="https://www.instagram.com" target="_blank">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                                <a href="https://www.instagram.com" target="_blank">
-                                    <i class="fab fa-linkedin"></i>
-                                </a>
-                            </div>
-                        </div>
-
-                    </div>
+       <!-- Card Kedua -->
+        <div class="card">
+            <div>
+                <h1 class="long-text">Selamat datang di portofolio saya! </h1>
+                <p class="text-2">Saya adalah seorang Full Stack Developer dengan pengalaman dalam mengembangkan solusi perangkat lunak end-to-end. Dengan latar belakang dalam pengembangan web dan aplikasi, saya memiliki keahlian dalam mengintegrasikan teknologi dan membuat pengalaman pengguna yang responsif dan efisien.</p>
             </div>
+            <div class="card-content">
+                
+                <a href="contact.html" class="button" style="display: flex;text-align: left;">contact Me</a>
+                
+                <div>
+                    <p class="social" style="display: flex;text-align: center;"> 
+                        Download My CV 
+                        <a href="contact.html" target="_blank">
+                            <i class="fas fa-download"></i>
+                        </a>
+                        <!-- <img src="/assets/img/download.png" alt="Dumbways" class="logo"> -->
+                        
+                        
+                       
+                    
+                        
+                    </p>
+                </div>
+                <b >Follow My Social Media </b>
+                <div class="social-icons" style="margin-top: 1px;">
+                    <a href="https://www.facebook.com" target="_blank">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="https://www.twitter.com" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+            </div>
+
+        <!-- Card Ketiga -->
+        <div class="card-2">
             
-            <div class="inner-card">
-                <img src="./assets/img/logo1.png" alt="Dumbways">
-                <h1>Dumbways</h1>
-                <p>Best Bootcamp For Programmer</p>
+            <img src="./assets/img/pict.jpg" alt="Deskripsi Gambar">
+            <h3>Chikal Anugrah</h3>
+            <p>Fullstack Developer</p>
+                </div>
             </div>
+
         </div>
+        <div>
+            <!-- <footer class="footer">
+                <p>
+                    CopyRight &copy; 2021 - Dumbways
+                </p>
+            </footer> -->
+        </div>
+    </div>
     </div>
 </body>
 </html>
