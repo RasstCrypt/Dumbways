@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="assets/css/index.css" />
+    <link rel="stylesheet" href="assets/css/nav.css" />
+    <link rel="stylesheet" href="assets/css/contact.css" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul class="navbar-ul">
+            <div class="navbar-left">
+                <li>
+                    <img src="assets/img/logo1.png" class="navbar-logo" />
+                </li>
+                <li>
+                    <a href="index.html" class="navbar-link"> Home </a>
+                </li>
+                <li>
+                    <a href="example.html" class="navbar-link"> My Project </a>
+                </li>
+                <li>
+                    <a href="card.html" class="navbar-link"> Card </a>
+                </li>
+            </div>
+            <div class="navbar-right">
+                <li>
+                    <a href="contact.html" class="navbar-contact-btn"> Contact </a>
+                </li>
+            </div>
+        </ul>
+    </nav>
+
+    <div style="display: flex; width: 100%; justify-content: center; margin-top: 20px;">
+        <div style="display: flex; flex-direction: column; width: 300px; justify-content: center;">
+            <h1 style="text-align: center;margin-bottom: 30px;"> GET IN TOUCH </h1>
+            <label class="label-style" for="name">Name</label>
+            <input class="input-style" id="name" />
+            <label class="label-style" for="email">Email</label>
+            <input class="input-style" id="email" required />
+            <label class="label-style" for="phoneNumber">Phone Number</label>
+            <input class="input-style" id="phoneNumber" type="number"/>
+            <label class="label-style" for="subject">Subject</label>
+            <select class="input-style" style="width: 525px;" id="subject">
+                <option>Solidity Developer</option>
+                <option>Move Developer</option>
+                <option>Cairo Developer</option>
+            </select>
+            <label class="label-style" for="message">Your message</label>
+            <textarea class="input-msg" id="message"></textarea>
+            <button class="btn-submit">Submit</button>
+        </div>
+    </div>
+</body>
+
+</html>
